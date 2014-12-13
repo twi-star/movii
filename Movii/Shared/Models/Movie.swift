@@ -9,17 +9,13 @@
 import Foundation
 import UIKit
 
-enum MovieExtra
-{
-    case hd, treed, vos
-}
 
 struct Session
 {
-    let extra: MovieExtra?
+    let extra: String?
     let time: String
     
-    init(time: String, extra: MovieExtra?)
+    init(time: String, extra: String?)
     {
         self.extra = extra
         self.time = time

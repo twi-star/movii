@@ -61,16 +61,28 @@ class FakeAPIClient
             var longitude: Float = subJson["longitude"].floatValue
             var location: CLLocation = CLLocation(latitude: Double(latitude), longitude: Double(longitude))
             var billboard = subJson["billboard"]
-            for (index: String, movie: JSON) in billboard {
-                var identifier: String = movie["identifier"].stringValue
+            var movies: [Movie] = [Movie]()
+            
+            for (index: String, movieJson: JSON) in billboard {
+                var identifier: String = movieJson["movie_id"].stringValue
                 var movie: Movie? = self.movies.filter({ (m: Movie) -> Bool in
                     return m.identifier == identifier
                 }).first
                 if movie == nil { return }
+                var sessions = movieJson["sessions"]
                 
-                
-                
+                for (index: String, sJson: JSON) in sessions {
+                    let time: String = sJson["time"].stringValue
+                    let extra: String = sJson["extra"].stringValue
+                    let session: Session = Session(time: time, extra: extra)
+                    movie?.sessions.append(session)
+                }
+                movies.append(movie!)
             }
+            
+            var theater: Theater = Theater(name: name, address: address, location: location)
+            theater.movies = movies
+            self.theaters.append(theater)
         }
     }
 }
