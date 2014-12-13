@@ -48,15 +48,29 @@ class FakeAPIClient
             var sinopsis: String = subJson["sinopsis"].stringValue
             var category: String = subJson["category"].stringValue
             var buyLink: String = subJson["buy_link"].stringValue
-            var movie: Movie = Movie(identifier: identifier, name: name, poster: UIImage(named: poster)!, sinopsis: sinopsis, category: category, rating: UInt(rating), buyLink: buyLink)
+            var rating: Float = subJson["rating"].floatValue
+            var movie: Movie = Movie(identifier: "\(identifier)", name: name, poster: UIImage(named: poster)!, sinopsis: sinopsis, category: category, rating: UInt(rating), buyLink: buyLink)
+            self.movies.append(movie)
         }
         
         // Theaters
         for (index: String, subJson: JSON) in theaters {
             var name: String = subJson["name"].stringValue
             var address: String = subJson["address"].stringValue
-            
-            //Do something you want
+            var latitude: Float = subJson["latitude"].floatValue
+            var longitude: Float = subJson["longitude"].floatValue
+            var location: CLLocation = CLLocation(latitude: Double(latitude), longitude: Double(longitude))
+            var billboard = subJson["billboard"]
+            for (index: String, movie: JSON) in billboard {
+                var identifier: String = movie["identifier"].stringValue
+                var movie: Movie? = self.movies.filter({ (m: Movie) -> Bool in
+                    return m.identifier == identifier
+                }).first
+                if movie == nil { return }
+                
+                
+                
+            }
         }
     }
 }

@@ -3,8 +3,8 @@
     {
       "name": "Bosque Multicines: 9 salas",
       "address": "Rambla del Prat, 16 08012 Barcelona",
-      "latitude": 33,
-      "longitude": 33,
+      "latitude": 41.401749,
+      "longitude": 2.152119,
       "billboard": [
         {
           "movie_id": 2,

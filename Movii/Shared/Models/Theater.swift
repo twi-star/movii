@@ -16,6 +16,7 @@ struct Theater
     private let name: String
     private let address: String
     private let location: CLLocation
+    lazy internal var movies: [Movie] = { [Movie]() }()
     
     //MARK: - Constructor
     

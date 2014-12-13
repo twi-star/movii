@@ -28,7 +28,7 @@ struct Session
 
 struct Movie
 {
-    private let identifier: String
+    internal let identifier: String
     private let name: String
     private let poster: UIImage
     private let sinopsis: String
