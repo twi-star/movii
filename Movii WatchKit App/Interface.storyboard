@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6724" systemVersion="13F34" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6711"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3735"/>
+    </dependencies>
+    <scenes>
+        <!--Movie Detail Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="MovieDetailController" customModule="Movii_WatchKit_Extension">
+                    <items>
+                        <imageView width="1" alignment="center" image="1_poster.jpg" id="WN9-3f-bWS"/>
+                        <separator alignment="left" id="kbk-J0-mI1">
+                            <color key="color" red="0.1843137255" green="0.53333333329999999" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <label width="1" alignment="left" text="Los Juegos del hambre" numberOfLines="0" id="1rr-Oo-g3e">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <label alignment="left" text="Sinsajo" id="ILl-Jc-pdn">
+                            <color key="textColor" red="0.7803921568627451" green="0.69803921568627447" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <label alignment="left" text="★★★☆☆" id="eEE-Wm-4q0">
+                            <color key="textColor" red="1" green="0.87189340437541551" blue="0.17281377155609268" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <label alignment="left" text="Multicines el Bosque" id="z3V-n4-0Cs">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="13"/>
+                        </label>
+                        <separator alignment="left" id="Wg5-if-5OX">
+                            <color key="color" red="0.18431372549019609" green="0.53333333333333333" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <group width="0.90000000000000002" alignment="center" hasDetent="YES" id="9uJ-YK-u66">
+                            <items>
+                                <label alignment="left" numberOfLines="0" id="RVb-fQ-tQs">
+                                    <string key="text">When Katniss destroys the games, she goes to District 13 after District 12 is destroyed. She meets President Coin who convinces her to be the symbol of rebellion, while trying to save Peeta from the Capitol."</string>
+                                    <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="jaj-4F-QGS"/>
+                        <button width="1" alignment="left" title="14:00 - 3D" id="kIy-gA-bRj">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.30432521410032481" green="0.49777746370955317" blue="0.61401865433673475" alpha="1" colorSpace="calibratedRGB"/>
+                        </button>
+                        <button width="1" alignment="left" title="19:00" id="y6Y-ji-BB5">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.30432521410000002" green="0.49777746369999998" blue="0.61401865430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </button>
+                        <button width="1" alignment="left" title="21:00 - HD" id="Bk3-LU-CKU">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.30432521410000002" green="0.49777746369999998" blue="0.61401865430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </button>
+                        <table alignment="left" layout="vertical" id="eXw-WF-pG6"/>
+                    </items>
+                    <color key="backgroundColor" red="0.16078431369999999" green="0.2784313725" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <segue destination="nFC-X7-qZj" kind="relationship" relationship="nextPage" id="7nK-x8-PTx"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="94" y="814.36725663716811"/>
+        </scene>
+        <!--Movie Detail Controller-->
+        <scene sceneID="fuL-0f-xqP">
+            <objects>
+                <controller id="nFC-X7-qZj" customClass="MovieDetailController" customModule="Movii_WatchKit_Extension">
+                    <items>
+                        <imageView width="1" alignment="center" image="2_poster.jpg" id="FY6-Ql-mpk"/>
+                        <separator alignment="left" id="2Df-Fj-dnR">
+                            <color key="color" red="0.1843137255" green="0.53333333329999999" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <label width="1" alignment="left" text="Interstelar" numberOfLines="0" id="tOy-6y-hWl">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <label alignment="left" text="★★★☆☆" id="lGK-q4-dpZ">
+                            <color key="textColor" red="1" green="0.87189340439999996" blue="0.1728137716" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <label alignment="left" text="Multicines el Bosque" id="xiy-OU-fp9">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="13"/>
+                        </label>
+                        <separator alignment="left" id="Lvt-bu-cB7">
+                            <color key="color" red="0.1843137255" green="0.53333333329999999" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <group width="0.90000000000000002" alignment="center" hasDetent="YES" id="DY3-bB-yy9">
+                            <items>
+                                <label alignment="left" numberOfLines="0" id="V7N-3J-nsW">
+                                    <string key="text">When Katniss destroys the games, she goes to District 13 after District 12 is destroyed. She meets President Coin who convinces her to be the symbol of rebellion, while trying to save Peeta from the Capitol."</string>
+                                    <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="pKr-Jd-fVg"/>
+                        <button width="1" alignment="left" title="14:00 - 3D" id="6Zm-8h-s9l">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.30432521410000002" green="0.49777746369999998" blue="0.61401865430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </button>
+                        <button width="1" alignment="left" title="19:00 - 3D" id="TDL-V6-uBa">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.30432521410000002" green="0.49777746369999998" blue="0.61401865430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </button>
+                        <button width="1" alignment="left" title="22:00 - HD" id="vbG-0E-joA">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.30432521410000002" green="0.49777746369999998" blue="0.61401865430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </button>
+                        <table alignment="left" layout="vertical" id="nTC-9u-yqt"/>
+                    </items>
+                    <color key="backgroundColor" red="0.16078431369999999" green="0.2784313725" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <segue destination="I72-Yl-N5H" kind="relationship" relationship="nextPage" id="8FE-XX-oXZ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="297" y="814.5"/>
+        </scene>
+        <!--Movie Detail Controller-->
+        <scene sceneID="KYD-GZ-A88">
+            <objects>
+                <controller id="I72-Yl-N5H" customClass="MovieDetailController" customModule="Movii_WatchKit_Extension">
+                    <items>
+                        <imageView width="1" alignment="center" image="3_poster.jpg" id="gzM-Ye-ktx"/>
+                        <separator alignment="left" id="nZ2-JY-eNB">
+                            <color key="color" red="0.1843137255" green="0.53333333329999999" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <label width="1" alignment="left" text="BoyHood" numberOfLines="0" id="sch-Bj-e26">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <label alignment="left" text="★★★★★" id="4Nu-Ru-rO1">
+                            <color key="textColor" red="1" green="0.87189340439999996" blue="0.1728137716" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                        <label alignment="left" text="Multicines el Bosque" id="n1o-vX-44o">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" name="HelveticaNeue-LightItalic" family="Helvetica Neue" pointSize="13"/>
+                        </label>
+                        <separator alignment="left" id="SWD-Y4-ztJ">
+                            <color key="color" red="0.1843137255" green="0.53333333329999999" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <group width="0.90000000000000002" alignment="center" hasDetent="YES" id="mnf-KQ-nAl">
+                            <items>
+                                <label alignment="left" numberOfLines="0" id="dd0-wX-Mac">
+                                    <string key="text">When Katniss destroys the games, she goes to District 13 after District 12 is destroyed. She meets President Coin who convinces her to be the symbol of rebellion, while trying to save Peeta from the Capitol."</string>
+                                    <fontDescription key="font" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="SPb-JK-yey"/>
+                        <button width="1" alignment="left" title="15:00" id="piG-vs-hkQ">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.30432521410000002" green="0.49777746369999998" blue="0.61401865430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </button>
+                        <button width="1" alignment="left" title="18:30" id="JZu-jB-3bR">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.30432521410000002" green="0.49777746369999998" blue="0.61401865430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </button>
+                        <button width="1" alignment="left" title="19:00" id="pm1-pT-3i8">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.30432521410000002" green="0.49777746369999998" blue="0.61401865430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </button>
+                        <table alignment="left" layout="vertical" id="a5N-uk-p7V"/>
+                    </items>
+                    <color key="backgroundColor" red="0.16078431369999999" green="0.2784313725" blue="0.37254901959999998" alpha="1" colorSpace="calibratedRGB"/>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="495" y="804.86725663716811"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="Ygs-5N-c8X">
+            <objects>
+                <controller id="9NC-BW-W18">
+                    <items>
+                        <button width="1" alignment="left" title="Buy" id="0rJ-uD-0bm"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="698" y="596"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label width="136" height="100" alignment="left" text="Text" textAlignment="center" numberOfLines="0" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" id="JfB-70-Muf"/>
+                    <color key="backgroundColor" red="0.16078431372549018" green="0.27843137254901962" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="-60" y="1000"/>
+        </scene>
+    </scenes>
+</document>

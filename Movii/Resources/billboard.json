@@ -1,0 +1,84 @@
+{
+  "theaters": [
+    {
+      "name": "Bosque Multicines: 9 salas",
+      "address": "Rambla del Prat, 16 08012 Barcelona",
+      "latitude": 33,
+      "longitude": 33,
+      "billboard": [
+        {
+          "movie_id": 2,
+          "sessions": [
+            {
+              "time": "15:45",
+              "extra": "HD"
+            },
+            {
+              "time": "19:00",
+              "extra": ""
+            },
+            {
+              "time": "22:10",
+              "extra": "3D"
+            }
+          ]
+        },
+        {
+          "movie_id": 1,
+          "sessions": [
+            {
+              "time": "16:15",
+              "extra": "HD"
+            },
+            {
+              "time": "19:00",
+              "extra": "HD"
+            },
+            {
+              "time": "22:00",
+              "extra": "HD"
+            }
+          ]
+        },
+        {
+          "movie_id": 3,
+          "sessions": [
+            {
+              "time": "22:00",
+              "extra": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "movies": [
+    {
+      "identifier": 1,
+      "name": "The hunger games: The Mockingjay part 1",
+      "poster": "1_poster.jpg",
+      "sinopsis": "When Katniss destroys the games, she goes to District 13 after District 12 is destroyed. She meets President Coin who convinces her to be the symbol of rebellion, while trying to save Peeta from the Capitol.",
+      "category": "Adventure",
+      "rating": 7.2,
+      "buy_link": "http://grupbalana-bosque.admit-one.eu/?p=details&eventCode=15466"
+    },
+    {
+      "identifier": 2,
+      "name": "Interstellar",
+      "poster": "2_poster.jpg",
+      "sinopsis": "A team of explorers travel through a wormhole in an attempt to ensure humanity's survival.\n",
+      "category": "Sci-Fi",
+      "rating": 8.9,
+      "buy_link": "http://grupbalana-bosque.admit-one.eu/?p=details&eventCode=15468"
+    },
+    {
+      "identifier": 3,
+      "name": "Boyhood",
+      "poster": "3_poster.jpg",
+      "sinopsis": "The life of a young man, Mason, from age 5 to age 18.",
+      "category": "drama\n",
+      "rating": 8.5,
+      "buy_link": "http://grupbalana-bosque.admit-one.eu/?p=details&eventCode=14675"
+    }
+  ]
+}

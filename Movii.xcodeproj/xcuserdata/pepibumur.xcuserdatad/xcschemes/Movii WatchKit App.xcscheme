@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0620"
+   version = "2.0">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3DC9E78B1A3C605300C50B2B"
+               BuildableName = "Movii WatchKit App.app"
+               BlueprintName = "Movii WatchKit App"
+               ReferencedContainer = "container:Movii.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3D58629F1A3C5F3A006D6967"
+               BuildableName = "Movii.app"
+               BlueprintName = "Movii"
+               ReferencedContainer = "container:Movii.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "3DC9E77C1A3C605300C50B2B"
+               BuildableName = "Movii WatchKit Extension.appex"
+               BlueprintName = "Movii WatchKit Extension"
+               ReferencedContainer = "container:Movii.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Debug">
+      <Testables>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3DC9E78B1A3C605300C50B2B"
+            BuildableName = "Movii WatchKit App.app"
+            BlueprintName = "Movii WatchKit App"
+            ReferencedContainer = "container:Movii.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </TestAction>
+   <LaunchAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      allowLocationSimulation = "YES"
+      launchAutomaticallySubstyle = "8"
+      notificationPayloadFile = "Movii WatchKit Extension/PushNotificationPayload.apns">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         launchOptions = "8"
+         RemotePath = "/Movii">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3DC9E78B1A3C605300C50B2B"
+            BuildableName = "Movii WatchKit App.app"
+            BlueprintName = "Movii WatchKit App"
+            ReferencedContainer = "container:Movii.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3DC9E78B1A3C605300C50B2B"
+            BuildableName = "Movii WatchKit App.app"
+            BlueprintName = "Movii WatchKit App"
+            ReferencedContainer = "container:Movii.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Release"
+      debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3DC9E78B1A3C605300C50B2B"
+            BuildableName = "Movii WatchKit App.app"
+            BlueprintName = "Movii WatchKit App"
+            ReferencedContainer = "container:Movii.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/Movii">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "3DC9E78B1A3C605300C50B2B"
+            BuildableName = "Movii WatchKit App.app"
+            BlueprintName = "Movii WatchKit App"
+            ReferencedContainer = "container:Movii.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

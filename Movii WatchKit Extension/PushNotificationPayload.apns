@@ -1,0 +1,13 @@
+{
+    "aps": {
+        "alert": "Found a Theater with 3 movies you might be interested in",
+        "category": "MoviiFound"
+    },
+    
+    "WatchKit Simulator Actions": [
+        {
+            "title": "Show me more",
+            "identifier": "showMeMoreAction"
+        }
+    ],
+}
