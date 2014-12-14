@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D136AE21A3C9FA600E30480 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D136AE11A3C9FA600E30480 /* ViewController.xib */; };
+		3D136AE41A3CA0A300E30480 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D136AE31A3CA0A300E30480 /* MapKit.framework */; };
+		3D136AE61A3CAA1C00E30480 /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D136AE51A3CAA1C00E30480 /* back.jpg */; };
 		3D4A85BA1A3C86F8008D44A2 /* 3_poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3DC9E7D71A3C741700C50B2B /* 3_poster.jpg */; };
 		3D4A85BB1A3C8702008D44A2 /* 2_poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3DC9E7D61A3C741700C50B2B /* 2_poster.jpg */; };
 		3D4A85BC1A3C8707008D44A2 /* 1_poster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3DC9E7D51A3C741700C50B2B /* 1_poster.jpg */; };
@@ -86,6 +89,9 @@
 /* Begin PBXFileReference section */
 		13DE8E5ADD7D2E4B3DB83A14 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		2DE6879025C8C4F65F9AEBF7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D136AE11A3C9FA600E30480 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		3D136AE31A3CA0A300E30480 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3D136AE51A3CAA1C00E30480 /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
 		3D5862A01A3C5F3A006D6967 /* Movii.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movii.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5862B51A3C5F3A006D6967 /* MoviiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoviiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D5862BA1A3C5F3A006D6967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -133,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D136AE41A3CA0A300E30480 /* MapKit.framework in Frameworks */,
 				3DC9E7BA1A3C621F00C50B2B /* CoreLocation.framework in Frameworks */,
 				93D71DC9DC909B9118A69699 /* libPods.a in Frameworks */,
 			);
@@ -269,10 +276,12 @@
 		3DC9E7A31A3C618600C50B2B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3D136AE51A3CAA1C00E30480 /* back.jpg */,
 				3DC9E7D31A3C741700C50B2B /* billboard.json */,
 				3DC9E7D41A3C741700C50B2B /* Posters */,
 				3DC9E7A41A3C618600C50B2B /* Images.xcassets */,
 				3DC9E7A51A3C618600C50B2B /* LaunchScreen.xib */,
+				3D136AE11A3C9FA600E30480 /* ViewController.xib */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -393,6 +402,7 @@
 		F4EDBF77A4272FBFC8997738 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D136AE31A3CA0A300E30480 /* MapKit.framework */,
 				2DE6879025C8C4F65F9AEBF7 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -537,7 +547,9 @@
 			files = (
 				3DC9E7AC1A3C618600C50B2B /* LaunchScreen.xib in Resources */,
 				3DC9E7DA1A3C741700C50B2B /* 2_poster.jpg in Resources */,
+				3D136AE21A3C9FA600E30480 /* ViewController.xib in Resources */,
 				3DC9E7DB1A3C741700C50B2B /* 3_poster.jpg in Resources */,
+				3D136AE61A3CAA1C00E30480 /* back.jpg in Resources */,
 				3DC9E7D81A3C741700C50B2B /* billboard.json in Resources */,
 				3DC9E7D91A3C741700C50B2B /* 1_poster.jpg in Resources */,
 				3DC9E7AB1A3C618600C50B2B /* Images.xcassets in Resources */,

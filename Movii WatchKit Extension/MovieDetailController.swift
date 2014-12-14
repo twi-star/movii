@@ -10,13 +10,12 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
+class MovieDetailController: WKInterfaceController {
 
     lazy var posterImageView: WKInterfaceImage = { WKInterfaceImage() }()
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
-                
         
         // Configure interface objects here.
         NSLog("%@ awakeWithContext", self)
@@ -34,4 +33,7 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    @IBAction func buyLastSession() {
+        WKInterfaceController.openParentApplication(["Identifier": "3"], reply: nil)
+    }
 }

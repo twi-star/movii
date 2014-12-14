@@ -10,3 +10,4 @@ import Foundation
 
 typealias BasicCompletionClosure = () -> ()
 typealias ErrorCompletionClosure = (error: NSError?) -> ()
+let maximumTheaterDistance: Double = 500

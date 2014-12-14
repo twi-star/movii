@@ -3,14 +3,17 @@ PODS:
   - ParallaxBlur (0.1.4):
     - FXBlurView (~> 1.6.2)
   - PureLayout (2.0.4)
+  - TOWebViewController (2.0.14)
 
 DEPENDENCIES:
   - ParallaxBlur (~> 0.1)
   - PureLayout (~> 2.0)
+  - TOWebViewController (~> 2.0)
 
 SPEC CHECKSUMS:
   FXBlurView: abe1046285813c4f6e9008abbc324fc5ab32af90
   ParallaxBlur: 149ea077dec9264fc12bc04490cd05ff0e170e1d
   PureLayout: ddf4fedf7e2f5984f972bbd2205dda4fc3418347
+  TOWebViewController: d3eee5342e5f8508cc87107c96544f5dff01b802
 
 COCOAPODS: 0.35.0

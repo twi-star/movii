@@ -26,7 +26,7 @@ struct Movie
 {
     internal let identifier: String
     private let name: String
-    private let poster: UIImage
+    internal let poster: UIImage
     private let sinopsis: String
     private let category: String
     private let rating: UInt

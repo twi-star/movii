@@ -11,6 +11,6 @@ import CoreLocation
 
 protocol APIClientProtocol
 {
-    class func getTheaters(location: CLLocation) -> [Theater]
-    class func getMovieInfo(identifier: String) -> Movie?
+    func getNearTheater(location: CLLocation) -> Theater?
+    func getMovieInfo(identifier: String) -> Movie?
 }

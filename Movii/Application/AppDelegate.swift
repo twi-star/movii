@@ -20,17 +20,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //MARK: - Application Lifecycle
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        let vc: ViewController = ViewController()
+        let vc: ViewController = ViewController ( nibName:"ViewController", bundle: nil)
         if (self.window == nil) {
             self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         }
-        self.window?.rootViewController = UINavigationController(rootViewController: vc)
+        self.window?.rootViewController = vc
         self.window?.makeKeyAndVisible()
         let apiClient = FakeAPIClient.getInstance()
         return true
     }
 
     func applicationDidEnterBackground(application: UIApplication) {
+        // Not valid for simulator
         LocationManager.getInstance().startMonitoringSignificantLocationChanges { (location) -> () in
             BackgroundManager.executeIfBackground({ () -> () in
                 Billboarder.reportBillBoardInLocation(location)
@@ -43,5 +44,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     //MARK: - Notifications
+    
+    func application(application: UIApplication!, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]!, reply: (([NSObject : AnyObject]!) -> Void)!)
+    {
+        let viewController: MovieDetailViewController = MovieDetailViewController()
+        self.window?.rootViewController?.presentViewController(viewController, animated: true, completion: nil)
+    }
 }
 

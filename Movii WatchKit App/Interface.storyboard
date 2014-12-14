@@ -72,7 +72,7 @@
                         <separator alignment="left" id="2Df-Fj-dnR">
                             <color key="color" red="0.1843137255" green="0.53333333329999999" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
                         </separator>
-                        <label width="1" alignment="left" text="Interstelar" numberOfLines="0" id="tOy-6y-hWl">
+                        <label width="0.60000000000000009" widthAdjustment="37" alignment="center" text="Interstelar" textAlignment="center" numberOfLines="0" id="tOy-6y-hWl">
                             <fontDescription key="font" style="UICTFontTextStyleBody"/>
                         </label>
                         <label alignment="left" text="★★★☆☆" id="lGK-q4-dpZ">
@@ -126,7 +126,7 @@
                         <separator alignment="left" id="nZ2-JY-eNB">
                             <color key="color" red="0.1843137255" green="0.53333333329999999" blue="0.65490196079999996" alpha="1" colorSpace="calibratedRGB"/>
                         </separator>
-                        <label width="1" alignment="left" text="BoyHood" numberOfLines="0" id="sch-Bj-e26">
+                        <label width="1" alignment="left" text="BoyHood" textAlignment="center" numberOfLines="0" id="sch-Bj-e26">
                             <fontDescription key="font" style="UICTFontTextStyleBody"/>
                         </label>
                         <label alignment="left" text="★★★★★" id="4Nu-Ru-rO1">
@@ -160,6 +160,9 @@
                         <button width="1" alignment="left" title="19:00" id="pm1-pT-3i8">
                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <color key="backgroundColor" red="0.30432521410000002" green="0.49777746369999998" blue="0.61401865430000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="buyLastSession" destination="I72-Yl-N5H" id="vqc-Kb-gEV"/>
+                            </connections>
                         </button>
                         <table alignment="left" layout="vertical" id="a5N-uk-p7V"/>
                     </items>

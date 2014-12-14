@@ -13,9 +13,9 @@ struct Theater
 {
     // MARK: - Seeder 
     
-    private let name: String
-    private let address: String
-    private let location: CLLocation
+    internal let name: String
+    internal let address: String
+    internal let location: CLLocation
     lazy internal var movies: [Movie] = { [Movie]() }()
     
     //MARK: - Constructor
@@ -24,5 +24,24 @@ struct Theater
         self.name   = name
         self.location = location
         self.address = address
+    }
+    
+    //MARK: - Custm getters
+    
+    mutating internal func theaterName() -> String
+    {
+        return self.name
+    }
+    
+    mutating internal func moviesCount() -> Int
+    {
+        return self.movies.count
+    }
+    
+    //MARK: - Helpers
+    
+    func distance(fromLocation location: CLLocation) -> Double
+    {
+        return location.distanceFromLocation(self.location)
     }
 }

@@ -11,9 +11,14 @@ import CoreLocation
 
 class FakeAPIClient
 {
-    lazy private var movies: [Movie] = { [Movie]() }()
-    lazy private var theaters: [Theater] = { [Theater]() }()
+    //MARK: - Attributes
+    
+    internal lazy var movies: [Movie] = { [Movie]() }()
+    internal lazy var theaters: [Theater] = { [Theater]() }()
     private let jsonName: String
+
+    
+    //MARK: - Singleton
     
     private struct Singleton {
         static var instance: FakeAPIClient?
@@ -27,10 +32,16 @@ class FakeAPIClient
         return Singleton.instance!
     }
     
+    
+    //MARK: - Constructors
+    
     init(bundleJSONName: String) {
         self.jsonName = bundleJSONName
         seedData()
     }
+    
+    
+    //MARK: - Helpers
     
     func seedData()
     {
@@ -90,13 +101,18 @@ class FakeAPIClient
 
 extension FakeAPIClient: APIClientProtocol
 {
-    class func getTheaters(location: CLLocation) -> [Theater]
+    func getNearTheater(location: CLLocation) -> Theater?
     {
-        // TODO
-        return [Theater]()
+        for (theater: Theater) in self.theaters {
+            let distance = theater.distance(fromLocation: location)
+            if  distance < maximumTheaterDistance {
+                return theater
+            }
+        }
+        return nil
     }
     
-    class func getMovieInfo(identifier: String) -> Movie?
+    func getMovieInfo(identifier: String) -> Movie?
     {
         // TODO
         return nil
